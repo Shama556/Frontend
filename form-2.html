@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-2</title>
+   
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+     
+        h1{
+            text-align: center;
+            color: rgb(252, 185, 98);
+        }
+        body{
+            height: 100vh;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        form{
+            border: 3px solid rgb(255, 187, 77);
+            border-radius: 5px;
+            background-color: antiquewhite;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        input{
+            width: 100%;
+            outline: none;
+        }
+    
+        .submit{
+            background-color: rgba(234, 188, 128, 0.961);
+            border: 2px solid rgb(255, 189, 103);
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(255, 227, 194);
+            width: 100px;
+            margin: 8px 105px;
+            padding: 3px;
+            cursor: pointer;
+        }
+
+        .submit:hover{
+            color: rgb(255, 255, 255);
+        }
+
+        label{
+            margin-top: 5px;
+        }
+
+        .bg{
+            background-color: rgba(255, 207, 167, 0.857);
+        }
+
+        .circle{
+            border-radius: 150px 150px 0px 0px;
+            border: 2px solid rgb(255, 187, 77);
+            height: 350px;
+            width: 300px;
+            background-color: rgba(255, 207, 167, 0.857);
+            stop-opacity: initial;
+            transition: 0.3s ease-in;
+        }
+
+        .circle:hover{
+            background-color: rgb(255, 179, 118);
+            box-shadow: 5px 5px 15px rgb(226, 195, 161);
+        }
+
+    </style>
+</head>
+<body>
+   <div class="bg">
+    <div>
+      <div class="circle">
+       <form action="">
+        <h1> Sign up </h1>
+        <label for=""> Name:- </label>
+        <input type="text">
+        <br>
+
+        <label for=""> E-mail:- </label>
+        <input type="email">
+        <br> 
+
+        <label for=""> Password:- </label>
+        <input type="password">
+        <br>
+
+        <label for=""> Confirm Password:- </label>
+        <input type="password">
+        <br>
+        <input type="submit" class="submit">
+       </form>
+
+      </div>
+    </div>
+</div> 
+</body>
+</html>
